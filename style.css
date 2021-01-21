@@ -1,0 +1,340 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* élement principaux de la page */
+
+body
+
+{
+    background-image: url('images/parchemin.jpg'); 
+    background-attachment: fixed;   
+    background-size: cover;
+    font-family: comic sans ms, calibri, arial;
+    color: #610F00;
+    font-size:18px;
+}
+
+#page
+
+{
+    width: 100%;
+    margin:auto;
+    flex-wrap:wrap;
+}
+
+h3
+
+{
+    display:flex;
+    font-family: calibri;
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size:22px;
+    text-align:center;
+}
+
+aside h2
+
+{
+    font-family: calibri;
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size:30px;
+    margin-bottom:50px;
+    margin-top: 30px; 
+    border-bottom: 6px #610F00 double;
+    padding-bottom:40px;
+
+
+}
+
+nav h1
+
+{
+    font-family: calibri;
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size:30px;
+    margin-top: 50px; 
+    border-bottom: 6px #610F00 double;
+    padding-bottom:40px;
+
+}
+
+article h2
+
+{
+    font-family:calibri;
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size:50px;
+    margin-bottom:50px;
+    margin-top: 50px;
+   
+}
+
+
+/*header*/
+
+header
+
+{
+    display:flex;
+    justify-content: center;
+    border-bottom: 6px #610F00 double;
+}
+
+
+/*navigation*/
+
+nav
+
+{
+    border-right: 6px #610F00 double;   
+    display:flex;    
+    flex:1.2; 
+    flex-direction: column;       
+}
+
+nav ul
+
+{
+    display:flex;
+    flex-direction:column;    
+}
+
+nav li
+
+{
+    margin-top:50px;
+}
+
+nav a
+
+{
+    font-weight:bold;
+    color:#96200A;
+    text-decoration:none;
+    font-size:25px;
+}
+
+nav a:hover
+
+{
+    text-decoration:underline;
+    font-size:27px;
+}
+
+
+/*article*/
+
+article
+
+{
+    display:flex;
+    flex:3; 
+    flex-direction:column;
+      
+}
+
+article img
+
+{
+    width: 400px;
+    height: 400px;
+}
+
+article p
+
+{
+    font-size:22px;
+    margin-bottom:30px;
+    line-height: 30px;
+}
+
+
+/*aside*/
+
+aside
+{
+    flex-direction:column;
+    border-left: 6px #610F00 double;
+    display:flex;
+    flex:1.2;
+    background: url('images/accueil.png');
+    background-position:right 5% bottom 0%;
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+}
+
+aside a
+{
+    font-weight:bold;
+    color:#96200A;
+    text-decoration:none;
+    font-size:25px;
+   
+}
+
+aside li
+{
+    margin-bottom:25px;
+}
+
+aside a:hover
+{
+    text-decoration:underline;
+    font-size:27px;
+}
+
+
+/*section*/
+
+section
+{
+    display:flex;
+    
+}
+nav,article
+{
+    margin-right: 20px;
+}
+nav, article, aside
+{
+    padding: 30px 15px 10px 15px;
+    text-align:center;    
+}
+
+
+/*footer*/
+
+footer a
+{
+    font-weight:bold;
+    color:#96200A;
+    text-decoration:none;
+    font-size: 20px
+}
+
+footer a:hover
+{
+    text-decoration:underline;
+    font-size:22px;
+}
+
+/*social*/
+
+#social
+
+{
+    border-bottom:6px #610F00 double;
+    padding-bottom:20px;
+    display:flex;
+    flex-direction:column-reverse ;
+    border-top: 6px #610F00 double;
+}
+
+
+/* reseaux */
+
+#reseaux
+{
+   display:flex;
+   flex-wrap:wrap;
+   flex-direction:column;
+   align-content:center;
+}
+
+#reseaux ul
+{
+    display:flex;
+    flex-direction: row;       
+}
+
+#reseaux a
+{
+    font-weight:bold;
+    color:#96200A;
+    text-decoration:none;
+    font-size:40px;
+}
+
+#reseaux img
+{
+    width:70px;
+    height:70px;    
+    display:flex;
+    justify-content: center;    
+}
+
+#reseaux  a:hover
+{
+    text-decoration:underline;
+    font-size:42px;
+}
+
+/*bas*/
+
+#bas li
+{
+    margin-right:20px;        
+}
+#bas ul
+{
+    margin-top:15px;
+    display:flex;
+    flex-direction:row;
+    margin-left:20px;
+}
+
+/*copyright*/
+
+#copyright
+{
+    padding-top:15px;
+    margin-left:20px;
+    line-height: 30px;
+}
